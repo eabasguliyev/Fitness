@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;700&family=Roboto&family=Roboto+Condensed&display=swap");
+
+/* selected font families 
+
+https://fonts.google.com/share?selection.family=Montserrat:wght@400;500;700%7COpen%20Sans:wght@300;400;700%7CRoboto%7CRoboto%20Condensed
+
+*/
+
+:root {
+  --green: #a2ca28;
+  --red: #fd634e;
+  --white: #fff;
+}
+
+.green-text {
+  color: var(--green);
+}
+
+.red-text {
+  color: var(--red);
+}
+
+.white-text {
+  color: var(--white);
+}
+
+.gray-text {
+  color: #e3e9e9;
+}
+
+.green-bg {
+  background-color: var(--green);
+}
+
+.red-bg {
+  background-color: var(--red);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background: url("../img/headerbg.jpg") center/cover;
+}
+
+header nav,
+header div {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+header nav {
+  top: 20px;
+}
+
+header div {
+  bottom: 17vh;
+}
+
+nav ul li a {
+  font: 0.8rem Roboto, sans-serif;
+  letter-spacing: 1px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+header div h1,
+header div h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+header div h1 {
+  font: 2rem "Roboto", sans-serif;
+}
+
+header div h2 {
+  font: bold 0.94rem "Open Sans", sans-serif;
+  letter-spacing: 3px;
+}
+.container {
+  margin: auto;
+}
+
+.col-25 {
+  padding: 20px 0;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+#fitness {
+  background: url("../img/fitness.jpg") center/cover;
+}
+
+#body {
+  background: url("../img/body.jpg") center/cover;
+}
+
+#lifestyle {
+  background: url("../img/lifestyle.jpg") center/cover;
+}
+
+#young-boy {
+  background: url("../img/young-boy.jpg") center/cover;
+}
+
+#grape {
+  background: url("../img/grape.jpg") center/cover;
+}
+
+#mango {
+  background: url("../img/mango.jpg") center/cover;
+}
+
+article.row h2,
+article.row h3 {
+  text-transform: uppercase;
+}
+
+article.row h2 {
+  font: 500 0.875rem "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+article.row h3 {
+  font: 300 2rem "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+article.row p {
+  margin: 15px 0 10px 0;
+}
+
+.underline {
+  border-bottom: 1.5px solid var(--green);
+}
+
+#body-content,
+#fitness-content {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+#short-info {
+  padding: 20px 10px;
+}
+
+#short-info article.col-25 {
+  text-align: center;
+  padding: 10px 10px 20px 0;
+}
+
+#short-info article.col-25 > i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#short-info article.col-25 > h2 {
+  font: 300 1.5rem "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+#short-info article.col-25 > p {
+  text-align: justify;
+  font: 400 0.7rem "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+
+#young-boy > h2 {
+  font: 700 0.875rem "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+#young-boy div > h3 {
+  font: 700 0.875rem "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: var(--white);
+  margin-right: 5px;
+}
+#young-boy div > i {
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  header div h1 {
+    font: 2.5rem "Roboto", sans-serif;
+  }
+  header nav {
+    top: 40px;
+    text-align: initial;
+    padding-left: 50px;
+  }
+
+  header div {
+    text-align: right;
+    width: 480px;
+  }
+  nav ul {
+    float: right;
+    padding-top: 20px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 70px;
+  }
+
+  header div h2 {
+    padding-right: 60px;
+  }
+
+  .container {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  .row {
+    overflow: auto;
+  }
+
+  .col-25 {
+    width: 25%;
+  }
+  .col-33 {
+    width: 33%;
+  }
+  .col-67 {
+    width: 67%;
+  }
+
+  .float-left {
+    float: left;
+  }
+  .float-right {
+    float: right;
+  }
+
+  article.row h3 {
+    font-size: 2.1875rem;
+  }
+
+  #body-content,
+  #fitness-content {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #short-info {
+    margin-bottom: 30px;
+  }
+
+  #short-info article.col-25 {
+    text-align: initial;
+    padding-right: 20px;
+    /* height: 25vh;
+    position: relative; */
+  }
+
+  #short-info article.col-25 > a {
+    /* position: absolute;
+    bottom: 0; */
+  }
+
+  #young-boy {
+    position: relative;
+  }
+
+  #young-boy > h2 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+
+  #young-boy > div {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+  }
+}

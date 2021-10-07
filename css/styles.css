@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@300;400;700&family=Roboto&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;700&family=Roboto&family=Roboto+Condensed&display=swap");
 
 /* selected font families 
 
@@ -152,6 +152,56 @@ article.row p {
   padding: 20px 20px;
 }
 
+#body-content > p,
+#fitness-content > p {
+  font: 0.875rem "Open Sans", sans-serif;
+  line-height: 26px;
+  color: #656e74;
+}
+
+#fitness {
+  position: relative;
+}
+
+#fitness div {
+  width: 140px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+#fitness div > h2,
+#body div > h2 {
+  font: 0.75rem "Open Sans", sans-serif;
+}
+
+#fitness div > img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 19px;
+  height: 31px;
+}
+
+#body {
+  position: relative;
+}
+
+#body div {
+  width: 170px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+#body div > img {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 19px;
+  height: 31px;
+}
+
 #short-info {
   padding: 20px 10px;
 }
@@ -192,6 +242,92 @@ article.row p {
 #young-boy div > i {
   font-size: 0.875rem;
   color: var(--white);
+}
+
+#young-boy {
+  text-align: center;
+}
+
+#young-boy > h2 {
+  padding: 10px 0;
+}
+
+#young-boy h3 {
+  padding: 5px 0;
+}
+
+#lifestyle + div,
+#grape + div {
+  padding: 40px 40px;
+  text-align: center;
+}
+
+#lifestyle + div > i,
+#grape + div > i {
+  font-size: 2rem;
+  color: #dfe5e5;
+  margin-bottom: 20px;
+}
+
+#lifestyle + div > h2,
+#grape + div > h2 {
+  font: 600 0.875rem "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#lifestyle + div > h3,
+#grape + div > h3 {
+  font: 300 2rem "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+#lifestyle + div > p,
+#grape + div > p {
+  font: 0.875rem "Open Sans", sans-serif;
+  line-height: 26px;
+  color: #656e74;
+  font-family: "Open Sans";
+  margin-top: 20px;
+}
+
+#young-boy + div > h2,
+#mango + div > h3 {
+  font: 300 2rem "Open Sans", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#young-boy + div > p,
+#mango + div > p {
+  font: 0.8125rem "Open Sans", sans-serif;
+  line-height: 21px;
+}
+
+#young-boy + div,
+#mango + div {
+  padding: 60px;
+  text-align: center;
+}
+
+#mango + div > h2 {
+  font: 600 1.0625rem "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+#mango + div > i {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#banner {
+  height: 100vh;
+  background: url("../img/footerbg.jpg") center/cover;
+}
+
+#footer {
+  height: 100vh;
+  background: #0c1119;
 }
 
 @media only screen and (min-width: 768px) {
@@ -274,19 +410,70 @@ article.row p {
     bottom: 0; */
   }
 
+  #young-boy h3 {
+    padding: initial;
+  }
+
   #young-boy {
     position: relative;
+    text-align: initial;
   }
 
   #young-boy > h2 {
     position: absolute;
     top: 60px;
     left: 60px;
+    text-transform: uppercase;
+    padding: initial;
   }
 
   #young-boy > div {
     position: absolute;
     top: 60px;
     right: 60px;
+    text-transform: uppercase;
+  }
+
+  #lifestyle + div,
+  #grape + div {
+    padding: 80px 40px;
+    text-align: initial;
+  }
+
+  #lifestyle + div > h3,
+  #grape + div > h3 {
+    font-size: 2.1875rem;
+  }
+
+  #young-boy + div > h2 {
+    font-size: 2.5rem;
+    padding: 0 0 30px 0;
+  }
+
+  #young-boy + div {
+    text-align: initial;
+    padding-top: 70px;
+  }
+
+  #mango + div > h3 {
+    font-size: 2.5rem;
+  }
+
+  #mango + div > i {
+    margin-top: 10px;
+  }
+
+  #mango + div {
+    padding: 60px 10px 60px;
+  }
+
+  #fitness div {
+    right: 40px;
+    bottom: 50px;
+  }
+
+  #body div {
+    left: 50px;
+    bottom: 55px;
   }
 }

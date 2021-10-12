@@ -323,6 +323,23 @@ article.row p {
 #banner {
   height: 100vh;
   background: url("../img/footerbg.jpg") center/cover;
+  text-align: center;
+}
+
+#banner div {
+  padding-top: 20vh;
+}
+
+#banner div > h2 {
+  font: 2rem "Open Sans", sans-serif;
+  margin: 0 0 40px 0;
+}
+
+#banner div > p {
+  font: 1rem "Open Sans", sans-serif;
+  line-height: 23px;
+  width: 50%;
+  margin: auto;
 }
 
 #footer {
@@ -330,6 +347,63 @@ article.row p {
   background: #0c1119;
 }
 
+#footer article {
+  padding: 0 10px;
+}
+
+#footer article > h2 {
+  font: 0.9375rem "Open Sans", sans-serif;
+  line-height: 12px;
+  padding: 60px 0 30px 0;
+}
+
+#footer article > p {
+  font: 0.875rem "Open Sans", sans-serif;
+  line-height: 24px;
+  color: #8297a7;
+}
+
+.social-img {
+  width: 50px;
+  height: 50px;
+}
+
+#footer div article:last-child div {
+  margin: auto;
+}
+
+#footer div {
+  margin: 50px 0 0 0;
+}
+#name,
+#email {
+  font: 0.875rem "Roboto", sans-serif;
+  color: #83969f;
+  width: 200px;
+  height: 50px;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 0;
+}
+
+#email {
+  width: 340px;
+}
+
+#btn {
+  font: 0.875rem "Roboto", sans-serif;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 5px;
+}
+
+#btn:active {
+  background: #92b42a;
+}
 @media only screen and (min-width: 768px) {
   header div h1 {
     font: 2.5rem "Roboto", sans-serif;
@@ -475,5 +549,12 @@ article.row p {
   #body div {
     left: 50px;
     bottom: 55px;
+  }
+  #banner div > h2 {
+    font-size: 2.8125rem;
+  }
+
+  #footer article {
+    padding: 0 50px 0 0;
   }
 }

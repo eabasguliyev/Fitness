@@ -343,7 +343,6 @@ article.row p {
 }
 
 #footer {
-  height: 100vh;
   background: #0c1119;
 }
 
@@ -372,14 +371,20 @@ article.row p {
   margin: auto;
 }
 
-#footer div {
-  margin: 50px 0 0 0;
+#footer section div {
+  padding: 50px 0 0 0;
 }
+
+#form {
+  padding: 10px 0;
+  text-align: center;
+}
+
 #name,
 #email {
   font: 0.875rem "Roboto", sans-serif;
   color: #83969f;
-  width: 200px;
+  width: 100px;
   height: 50px;
   padding: 20px 25px;
   box-sizing: border-box;
@@ -388,10 +393,11 @@ article.row p {
 }
 
 #email {
-  width: 340px;
+  width: 170px;
 }
 
 #btn {
+  margin: 10px 0 0 0;
   font: 0.875rem "Roboto", sans-serif;
   width: 180px;
   height: 50px;
@@ -404,6 +410,7 @@ article.row p {
 #btn:active {
   background: #92b42a;
 }
+
 @media only screen and (min-width: 768px) {
   header div h1 {
     font: 2.5rem "Roboto", sans-serif;
@@ -554,7 +561,24 @@ article.row p {
     font-size: 2.8125rem;
   }
 
+  #footer {
+    height: 100vh;
+  }
   #footer article {
     padding: 0 50px 0 0;
+  }
+
+  #name {
+    width: 200px;
+    height: 50px;
+  }
+
+  #email {
+    width: 340px;
+    height: 50px;
+  }
+
+  #form {
+    text-align: initial;
   }
 }
